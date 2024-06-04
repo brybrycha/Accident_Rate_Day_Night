@@ -1,5 +1,5 @@
 <section>
-  <p class="body-text">
+  <p class="body-text" align = "center">
     <br>
     The visualization above depicts the accident rates at various times throughout the day. 
     From the chart, we can observe distinct peak times:
