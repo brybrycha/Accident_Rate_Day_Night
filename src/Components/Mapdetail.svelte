@@ -1,11 +1,11 @@
 <section>
-  <p class="body-text" style = "text-align:center">
+  <p class="body-text" >
     <br>
     (Author considered <span class='level'>6:00AM to 6:00 PM</span> as <span class='highlight'>Daytime</span> and <span class='level'>6:00PM to 6:00 AM</span> as <span class='highlight'>Nighttime</span>)
     With interactive map visualization, we can retrieve several facts.
     <br><br>
 
-    <list>
+    <list style = "text-align:center">
         <li><span class='highlight'>Daytime</span> has higher counts of accidents than nighttime as total accident counts in daytime is <span class='level'>4966</span>, 
             while nighttime has total accident counts of <span class='level'>2846</span></li>
         <br>
