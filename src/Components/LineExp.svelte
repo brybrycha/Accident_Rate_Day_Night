@@ -1,7 +1,3 @@
-<script>
-
-</script>
-
 <section>
   <p class="body-text">
     <br>
@@ -24,12 +20,17 @@
     This insight emphasizes the importance of heightened awareness and caution during these peak traffic periods to reduce the risk of accidents.
     <br><br>
   </p>
-  
 </section>
 
 <style>
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .level {
-      color: blue;
+        color: blue;
     }
     .underline {
         text-decoration: underline;
