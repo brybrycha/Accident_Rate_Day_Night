@@ -1,5 +1,5 @@
 <section>
-  <p class="body-text" align="center">
+  <p class="body-text" style = "text-align:center">
     <br>
     (Author considered <span class='level'>6:00AM to 6:00 PM</span> as <span class='highlight'>Daytime</span> and <span class='level'>6:00PM to 6:00 AM</span> as <span class='highlight'>Nighttime</span>)
     With interactive map visualization, we can retrieve several facts.
