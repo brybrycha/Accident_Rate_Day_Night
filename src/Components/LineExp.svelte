@@ -4,7 +4,7 @@
     The visualization above depicts the accident rates at various times throughout the day. 
     From the chart, we can observe distinct peak times:
     <br><br>
-    <list style = "text-align:center">
+    <list class="text-center">
         <li>The first noticeable peak occurs around <span class='level'>8:00 AM</span>, 
             coinciding with the morning rush hour when traffic is typically heavier as people commute to work or school.</li>
         <br>

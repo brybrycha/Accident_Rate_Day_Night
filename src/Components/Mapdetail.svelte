@@ -5,7 +5,7 @@
     With interactive map visualization, we can retrieve several facts.
     <br><br>
 
-    <list style = "text-align:center">
+    <list class="text-center">
         <li><span class='highlight'>Daytime</span> has higher counts of accidents than nighttime as total accident counts in daytime is <span class='level'>4966</span>, 
             while nighttime has total accident counts of <span class='level'>2846</span></li>
         <br>
