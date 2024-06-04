@@ -16,7 +16,7 @@
         <br><br>
         Even for <span class='level'>'fatal'</span> accidents, the distribution is close, with 68.0% happening during the <span class='day'>day</span> and 32.0% at <span class='night'>night</span>.
        
-    <br><br>
+    <br>
 
     These consistent proportions across different times of the day suggest that the severity of accidents is <span class='underline'>not significantly 
     influenced</span> by whether it is <span class='day'>day</span> or <span class='night'>night</span>. This might indicate that factors other than the time of day, such as road conditions, 
