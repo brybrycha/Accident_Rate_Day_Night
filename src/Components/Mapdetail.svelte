@@ -5,13 +5,12 @@
     With interactive map visualization, we can retrieve several facts.
     <br><br>
 
-    <list >
-        <li><span class='highlight'>Daytime</span> has higher counts of accidents than nighttime as total accident counts in daytime is <span class='level'>4966</span>, 
-            while nighttime has total accident counts of <span class='level'>2846</span></li>
-        <br>
-        <li>Intersections have higher accident rates than any other types of road</li>
-        <br>
-    </list>
+        <span class='highlight'>Daytime</span> has higher counts of accidents than nighttime as total accident counts in daytime is <span class='level'>4966</span>, 
+            while nighttime has total accident counts of <span class='level'>2846</span>
+        <br><br>
+        Intersections have higher accident rates than any other types of road
+        <br><br>
+
     <br>
     These patterns show that Daytime has a higher accident rate due to high volume of car traffic during daytime while there is significantly less people driving around at nighttime.
     Also, intersections have the highest accident rate due to several reasons including speeding, failure to notice other cars, and confusion with traffic lights' signals.
