@@ -687,40 +687,63 @@ var app = (function () {
     function create_fragment$g(ctx) {
     	let section;
     	let p;
-    	let span;
+    	let span0;
     	let t1;
     	let br0;
     	let br1;
     	let t2;
+    	let span1;
+    	let t4;
     	let br2;
     	let br3;
-    	let t3;
+    	let t5;
     	let br4;
     	let br5;
+    	let t6;
+    	let br6;
+    	let br7;
+    	let t7;
+    	let br8;
+    	let br9;
 
     	const block = {
     		c: function create() {
     			section = element("section");
     			p = element("p");
-    			span = element("span");
-    			span.textContent = "P";
-    			t1 = text$1("icture a busy morning in Camden, UK. \n    The streets are alive with activity when suddenly, the sound of screeching tires and a crash pierces the air. \n    What if the time of day could predict the likelihood of such accidents?\n    ");
+    			span0 = element("span");
+    			span0.textContent = "P";
+    			t1 = text$1("icture a busy highway on a random day in Camden, UK. \n    The streets are alive with activity when suddenly, the sound of screeching tires and a crash pierces the air. \n    Can you guess what time the accident would have happened? Would it have been a daytime, or a nighttime? \n    ");
     			br0 = element("br");
     			br1 = element("br");
-    			t2 = text$1("\n    This article examines the frequency and severity of auto accidents in Camden, UK, \n    over the course of the day. We explore trends in the data by using a variety of interactive visualizations.\n    ");
+    			t2 = text$1("\n    Quite an odd question, but get this; ");
+    			span1 = element("span");
+    			span1.textContent = "what if the time of day could predict the likelihood of such accidents?";
+    			t4 = space();
     			br2 = element("br");
     			br3 = element("br");
-    			t3 = text$1("\n    Join us as we delve into the daily rhythms of road safety, analyzing peak times and comparing accidents during the day and night to understand how timing influences road incidents.\n    ");
+    			t5 = text$1("\n    We first predicted that accidents would be more prevalent and more severe during the nighttime due to its limited visibility. \n    ");
     			br4 = element("br");
     			br5 = element("br");
-    			attr_dev(span, "class", "highlight svelte-1sj2fnj");
-    			add_location(span, file$g, 2, 4, 38);
-    			add_location(br0, file$g, 5, 4, 303);
-    			add_location(br1, file$g, 5, 8, 307);
-    			add_location(br2, file$g, 8, 4, 515);
-    			add_location(br3, file$g, 8, 8, 519);
-    			add_location(br4, file$g, 10, 4, 713);
-    			add_location(br5, file$g, 10, 8, 717);
+    			t6 = text$1("\n    To delve into this question, this article examines the frequency and severity of auto accidents in Camden, UK, \n    over the course of the day. We explore trends in the data by using a variety of interactive visualizations.\n    ");
+    			br6 = element("br");
+    			br7 = element("br");
+    			t7 = text$1("\n    Join us as we delve into the daily rhythms of road safety, analyzing peak times and comparing accidents during the day and night to understand how timing influences road incidents.\n    ");
+    			br8 = element("br");
+    			br9 = element("br");
+    			attr_dev(span0, "class", "highlight svelte-1sj2fnj");
+    			add_location(span0, file$g, 2, 4, 38);
+    			add_location(br0, file$g, 5, 4, 352);
+    			add_location(br1, file$g, 5, 8, 356);
+    			attr_dev(span1, "class", "color");
+    			add_location(span1, file$g, 6, 41, 402);
+    			add_location(br2, file$g, 7, 4, 505);
+    			add_location(br3, file$g, 7, 8, 509);
+    			add_location(br4, file$g, 9, 4, 649);
+    			add_location(br5, file$g, 9, 8, 653);
+    			add_location(br6, file$g, 12, 4, 890);
+    			add_location(br7, file$g, 12, 8, 894);
+    			add_location(br8, file$g, 14, 4, 1088);
+    			add_location(br9, file$g, 14, 8, 1092);
     			attr_dev(p, "class", "body-text");
     			add_location(p, file$g, 1, 2, 12);
     			add_location(section, file$g, 0, 0, 0);
@@ -731,16 +754,24 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			insert_dev(target, section, anchor);
     			append_dev(section, p);
-    			append_dev(p, span);
+    			append_dev(p, span0);
     			append_dev(p, t1);
     			append_dev(p, br0);
     			append_dev(p, br1);
     			append_dev(p, t2);
+    			append_dev(p, span1);
+    			append_dev(p, t4);
     			append_dev(p, br2);
     			append_dev(p, br3);
-    			append_dev(p, t3);
+    			append_dev(p, t5);
     			append_dev(p, br4);
     			append_dev(p, br5);
+    			append_dev(p, t6);
+    			append_dev(p, br6);
+    			append_dev(p, br7);
+    			append_dev(p, t7);
+    			append_dev(p, br8);
+    			append_dev(p, br9);
     		},
     		p: noop$4,
     		i: noop$4,
@@ -27975,6 +28006,9 @@ var app = (function () {
     	let t8;
     	let br10;
     	let br11;
+    	let t9;
+    	let br12;
+    	let br13;
 
     	const block = {
     		c: function create() {
@@ -27994,15 +28028,18 @@ var app = (function () {
     			t4 = space();
     			span1 = element("span");
     			span1.textContent = "O";
-    			t6 = text$1("ur analysis of car accidents in Camden, UK, offers valuable insights into how time influences both the frequency and severity of road incidents. We observed distinct peaks in accident rates during the morning and evening rush hours, as well as a notable increase around midday. These findings highlight the importance of heightened vigilance during these high-traffic periods.\n      ");
+    			t6 = text$1("ur analysis of car accidents in Camden, UK, offers valuable insights into how time influences both the frequency and severity of road incidents. We observed distinct peaks in accident rates during the morning and evening rush hours, as well as a notable increase around midday. These findings highlight the importance of heightened vigilance during these high-traffic periods, and how that rejects our initial hypothesis. In contrary of our initial hypothesis, you are more likely to get into an accident during daytime than night time\n      ");
     			br6 = element("br");
     			br7 = element("br");
     			t7 = text$1("\n      Contrary to our initial hypothesis, the time of day does not significantly impact the severity of accidents. The distribution of 'slight', 'serious', and 'fatal' accidents remains consistent between daytime and nighttime. This suggests that other factors, such as road conditions and driver behavior, are more critical in determining accident severity.\n      ");
     			br8 = element("br");
     			br9 = element("br");
-    			t8 = text$1("\n      In conclusion, while timing does affect the likelihood of accidents, it does not drastically influence their severity. To improve road safety, a multifaceted approach addressing various factors beyond just the time of day is essential. By understanding these patterns, we can better prepare and implement strategies to reduce accidents and enhance road safety for everyone.\n      ");
+    			t8 = text$1("\n      One takeaway from the result with visualizations is how we should not be afraid of driving during nighttime but we should be more cautious when we are driving during nighttime. Furthermore, Limited Visiblility is not the huge factors that cause traffic accidents. This result was explained by map visualization with separated nighttime and daytime accident data. You can see how daytime has more total accident counts than night time.\n      ");
     			br10 = element("br");
     			br11 = element("br");
+    			t9 = text$1("\n      In conclusion, while timing does affect the likelihood of accidents, it does not drastically influence their severity. To improve road safety, a multifaceted approach addressing various factors beyond just the time of day is essential. By understanding these patterns, we can better prepare and implement strategies to reduce accidents and enhance road safety for everyone.\n      ");
+    			br12 = element("br");
+    			br13 = element("br");
     			add_location(br0, file$1, 2, 8, 44);
     			add_location(br1, file$1, 2, 12, 48);
     			attr_dev(span0, "class", "high svelte-sq7zq1");
@@ -28013,12 +28050,14 @@ var app = (function () {
     			add_location(br5, file$1, 5, 12, 127);
     			attr_dev(span1, "class", "highlight svelte-sq7zq1");
     			add_location(span1, file$1, 6, 6, 138);
-    			add_location(br6, file$1, 7, 6, 553);
-    			add_location(br7, file$1, 7, 10, 557);
-    			add_location(br8, file$1, 9, 6, 927);
-    			add_location(br9, file$1, 9, 10, 931);
-    			add_location(br10, file$1, 11, 6, 1322);
-    			add_location(br11, file$1, 11, 10, 1326);
+    			add_location(br6, file$1, 7, 6, 712);
+    			add_location(br7, file$1, 7, 10, 716);
+    			add_location(br8, file$1, 9, 6, 1086);
+    			add_location(br9, file$1, 9, 10, 1090);
+    			add_location(br10, file$1, 11, 6, 1542);
+    			add_location(br11, file$1, 11, 10, 1546);
+    			add_location(br12, file$1, 13, 6, 1937);
+    			add_location(br13, file$1, 13, 10, 1941);
     			attr_dev(p, "class", "body-text svelte-sq7zq1");
     			add_location(p, file$1, 1, 4, 14);
     			add_location(section, file$1, 0, 0, 0);
@@ -28050,6 +28089,9 @@ var app = (function () {
     			append_dev(p, t8);
     			append_dev(p, br10);
     			append_dev(p, br11);
+    			append_dev(p, t9);
+    			append_dev(p, br12);
+    			append_dev(p, br13);
     		},
     		p: noop$4,
     		i: noop$4,
