@@ -1,8 +1,13 @@
 <section id="intro">
   <h1 id="intro-hed">Correlation between Car Accidents and Time</h1>
   <h1 class="intro-sub">How does time of the day manipulate car accident rates</h1>
+  
   <h3 id="introdate">
     <a href="https://github.com/brybrycha" target="_blank">Chole Kim, Bryan Cha</a>, May 2024
+  </h3>
+
+  <h3 id="introdate">
+    <a href="https://youtu.be/ipMg2vywrLg" target="_blank">Demo Video (Click Here)</a>
   </h3>
 </section>
 

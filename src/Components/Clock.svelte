@@ -50,13 +50,6 @@
     transition: color 0.3s ease;
   }
 
-  .dot {
-    transition: transform 0.3s ease;
-  }
-
-  .line {
-    transition: width 0.3s ease, height 0.3s ease;
-  }
 </style>
 
 <div class="clock-container">

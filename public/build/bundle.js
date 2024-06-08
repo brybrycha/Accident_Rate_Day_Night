@@ -1,5 +1,5 @@
 
-(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35730/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
+(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
 var app = (function () {
     'use strict';
 
@@ -574,9 +574,12 @@ var app = (function () {
     	let t1;
     	let h11;
     	let t3;
-    	let h3;
-    	let a;
+    	let h30;
+    	let a0;
     	let t5;
+    	let t6;
+    	let h31;
+    	let a1;
 
     	const block = {
     		c: function create() {
@@ -587,21 +590,31 @@ var app = (function () {
     			h11 = element("h1");
     			h11.textContent = "How does time of the day manipulate car accident rates";
     			t3 = space();
-    			h3 = element("h3");
-    			a = element("a");
-    			a.textContent = "Chole Kim, Bryan Cha";
+    			h30 = element("h3");
+    			a0 = element("a");
+    			a0.textContent = "Chole Kim, Bryan Cha";
     			t5 = text$1(", May 2024");
+    			t6 = space();
+    			h31 = element("h3");
+    			a1 = element("a");
+    			a1.textContent = "Demo Video (Click Here)";
     			attr_dev(h10, "id", "intro-hed");
     			attr_dev(h10, "class", "svelte-3hu7fb");
     			add_location(h10, file$h, 1, 2, 23);
     			attr_dev(h11, "class", "intro-sub svelte-3hu7fb");
     			add_location(h11, file$h, 2, 2, 92);
-    			attr_dev(a, "href", "https://github.com/brybrycha");
-    			attr_dev(a, "target", "_blank");
-    			add_location(a, file$h, 4, 4, 200);
-    			attr_dev(h3, "id", "introdate");
-    			attr_dev(h3, "class", "svelte-3hu7fb");
-    			add_location(h3, file$h, 3, 2, 176);
+    			attr_dev(a0, "href", "https://github.com/brybrycha");
+    			attr_dev(a0, "target", "_blank");
+    			add_location(a0, file$h, 5, 4, 203);
+    			attr_dev(h30, "id", "introdate");
+    			attr_dev(h30, "class", "svelte-3hu7fb");
+    			add_location(h30, file$h, 4, 2, 179);
+    			attr_dev(a1, "href", "https://youtu.be/ipMg2vywrLg");
+    			attr_dev(a1, "target", "_blank");
+    			add_location(a1, file$h, 9, 4, 328);
+    			attr_dev(h31, "id", "introdate");
+    			attr_dev(h31, "class", "svelte-3hu7fb");
+    			add_location(h31, file$h, 8, 2, 304);
     			attr_dev(section, "id", "intro");
     			attr_dev(section, "class", "svelte-3hu7fb");
     			add_location(section, file$h, 0, 0, 0);
@@ -615,9 +628,12 @@ var app = (function () {
     			append_dev(section, t1);
     			append_dev(section, h11);
     			append_dev(section, t3);
-    			append_dev(section, h3);
-    			append_dev(h3, a);
-    			append_dev(h3, t5);
+    			append_dev(section, h30);
+    			append_dev(h30, a0);
+    			append_dev(h30, t5);
+    			append_dev(section, t6);
+    			append_dev(section, h31);
+    			append_dev(h31, a1);
     		},
     		p: noop$4,
     		i: noop$4,
@@ -26131,10 +26147,10 @@ var app = (function () {
     			div0 = element("div");
     			t0 = text$1(/*currentHour*/ ctx[0]);
     			t1 = text$1(":00");
-    			attr_dev(div0, "class", "clock svelte-aze90b");
-    			add_location(div0, file$c, 62, 2, 1262);
-    			attr_dev(div1, "class", "clock-container svelte-aze90b");
-    			add_location(div1, file$c, 61, 0, 1230);
+    			attr_dev(div0, "class", "clock svelte-1mjc0k5");
+    			add_location(div0, file$c, 55, 2, 1146);
+    			attr_dev(div1, "class", "clock-container svelte-1mjc0k5");
+    			add_location(div1, file$c, 54, 0, 1114);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
