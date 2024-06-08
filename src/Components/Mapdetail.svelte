@@ -25,7 +25,7 @@
         align-items: center;
         text-align: center;
         flex-direction: column;
-        padding: 20px; /* Adjust as necessary */
+        padding: 20px; 
     }
     .level {
         color: blue;
@@ -34,11 +34,11 @@
         text-decoration: underline;
     }
     .highlight {
-        font-size: 1em; /* Increase the font size slightly */
-        font-weight: bold; /* Make the text bold */
+        font-size: 1em; 
+        font-weight: bold;
     }
     .body-text {
-        max-width: 800px; /* Adjust as necessary */
+        max-width: 800px; 
         margin: auto;
     }
 </style>

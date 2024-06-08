@@ -33,7 +33,7 @@
     });
   }
 
-  // Function to aggregate data by severity and daytime/nighttime and calculate percentages
+
   function aggregateData() {
     const severityCounts = d3.groups(processedData, d => d.severity, d => d.daytime).map(d => {
       const daytimeCount = d[1].find(v => v[0] === 'Daytime')?.[1].length || 0;
@@ -47,30 +47,30 @@
     return severityCounts;
   }
 
-  // Function to draw the chart
+
   function drawChart(data) {
-    const margin = { top: 80, right: 10, bottom: 40, left: 150 }; // Adjusted right margin
-    const width = 1000 - margin.left - margin.right; // Adjusted width
-    const height = 400 - margin.top - margin.bottom; // Adjusted height
+    const margin = { top: 80, right: 10, bottom: 40, left: 150 }; 
+    const width = 1000 - margin.left - margin.right; 
+    const height = 400 - margin.top - margin.bottom;
 
     d3.select("#dual-bar-chart").selectAll("*").remove();
 
     const svg = d3.select("#dual-bar-chart")
-      .attr("width", width + margin.left + margin.right + 100) // Added extra space for total counts
+      .attr("width", width + margin.left + margin.right + 100) 
       .attr("height", height + margin.top + margin.bottom)
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
     const x = d3.scaleLinear()
-      .domain([0, 100]) // Percentage scale
+      .domain([0, 100]) 
       .range([0, width]);
 
     const y = d3.scaleBand()
       .domain(data.map(d => d.severity))
       .range([0, height])
-      .padding(0.2); // Adjust padding to fit bars inside the chart
+      .padding(0.2); 
 
-    // Tooltip div
+
     const tooltip = d3.select("body").append("div")
       .attr("class", "tooltip")
       .style("position", "absolute")
@@ -88,7 +88,7 @@
       .enter()
       .append("rect")
       .attr("class", "bar daytime")
-      .attr("x", 0) // Start from 0
+      .attr("x", 0) 
       .attr("y", d => y(d.severity))
       .attr("width", d => x(d.daytimePercentage))
       .attr("height", 50)
@@ -110,7 +110,7 @@
       .enter()
       .append("rect")
       .attr("class", "bar nighttime")
-      .attr("x", d => x(d.daytimePercentage)) // Start where the daytime bar ends
+      .attr("x", d => x(d.daytimePercentage)) 
       .attr("y", d => y(d.severity))
       .attr("width", d => x(d.nighttimePercentage))
       .attr("height", 50)
@@ -151,7 +151,7 @@
       .style("fill", "black")
       .text(d => `${d.nighttimePercentage.toFixed(1)}%`);
 
-    // Add total counts on the right
+
     svg.selectAll(".total-label")
       .data(data)
       .enter()
@@ -180,7 +180,7 @@
       .text("Nighttime")
       .style("fill", "blue");
 
-    // Add title
+
     svg.append("text")
       .attr("x", width / 2)
       .attr("y", -margin.top / 2)
@@ -203,10 +203,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px; /* Adjusted margin */
+    margin-top: 50px; 
   }
   .chart-container {
-    width: 1200px; /* Adjusted width */
+    width: 1200px; 
   }
   .tooltip {
     position: absolute;

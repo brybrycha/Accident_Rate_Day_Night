@@ -14,7 +14,7 @@
 
 <style>
   .highlight {
-    font-size: 1.2em; /* Increase the font size slightly */
-    font-weight: bold; /* Make the text bold */
+    font-size: 1.2em; 
+    font-weight: bold; 
   }
 </style>

@@ -1,5 +1,5 @@
 
-(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
+(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35730/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
 var app = (function () {
     'use strict';
 
@@ -68,14 +68,6 @@ var app = (function () {
     }
     function children$4(element) {
         return Array.from(element.childNodes);
-    }
-    function set_style(node, key, value, important) {
-        if (value == null) {
-            node.style.removeProperty(key);
-        }
-        else {
-            node.style.setProperty(key, value, important ? 'important' : '');
-        }
     }
     function custom_event(type, detail, { bubbles = false, cancelable = false } = {}) {
         const e = document.createEvent('CustomEvent');
@@ -25786,195 +25778,70 @@ var app = (function () {
     const file$d = "src/Components/Map.svelte";
 
     function create_fragment$d(ctx) {
-    	let div0;
-    	let t1;
-    	let div10;
-    	let div1;
-    	let strong;
-    	let t3;
-    	let t4;
-    	let t5;
     	let div2;
-    	let t6;
-    	let div9;
-    	let h4;
-    	let t8;
+    	let div0;
+    	let strong;
+    	let t1;
+    	let t2;
+    	let t3;
+    	let div1;
+    	let t4;
     	let div3;
-    	let span0;
-    	let t9;
-    	let t10;
-    	let div4;
-    	let span1;
-    	let t11;
-    	let t12;
-    	let div5;
-    	let span2;
-    	let t13;
-    	let t14;
-    	let div6;
-    	let span3;
-    	let t15;
-    	let t16;
-    	let div7;
-    	let span4;
-    	let t17;
-    	let t18;
-    	let div8;
-    	let span5;
-    	let t19;
-    	let t20;
-    	let div11;
     	let button0;
-    	let t22;
+    	let t6;
     	let button1;
     	let mounted;
     	let dispose;
 
     	const block = {
     		c: function create() {
+    			div2 = element("div");
     			div0 = element("div");
-    			div0.textContent = "Accidents Distribution in Daytime and Nighttime";
-    			t1 = space();
-    			div10 = element("div");
-    			div1 = element("div");
     			strong = element("strong");
     			strong.textContent = "Total Accidents in View:";
+    			t1 = space();
+    			t2 = text$1(/*totalAccidents*/ ctx[0]);
     			t3 = space();
-    			t4 = text$1(/*totalAccidents*/ ctx[0]);
-    			t5 = space();
-    			div2 = element("div");
-    			t6 = space();
-    			div9 = element("div");
-    			h4 = element("h4");
-    			h4.textContent = "Number of Accidents";
-    			t8 = space();
+    			div1 = element("div");
+    			t4 = space();
     			div3 = element("div");
-    			span0 = element("span");
-    			t9 = text$1("1");
-    			t10 = space();
-    			div4 = element("div");
-    			span1 = element("span");
-    			t11 = text$1("5");
-    			t12 = space();
-    			div5 = element("div");
-    			span2 = element("span");
-    			t13 = text$1("10");
-    			t14 = space();
-    			div6 = element("div");
-    			span3 = element("span");
-    			t15 = text$1("15");
-    			t16 = space();
-    			div7 = element("div");
-    			span4 = element("span");
-    			t17 = text$1("20");
-    			t18 = space();
-    			div8 = element("div");
-    			span5 = element("span");
-    			t19 = text$1("25+");
-    			t20 = space();
-    			div11 = element("div");
     			button0 = element("button");
     			button0.textContent = "Daytime";
-    			t22 = space();
+    			t6 = space();
     			button1 = element("button");
     			button1.textContent = "Nighttime";
-    			attr_dev(div0, "class", "title svelte-u9m2au");
-    			add_location(div0, file$d, 265, 0, 6744);
-    			add_location(strong, file$d, 271, 4, 6876);
-    			attr_dev(div1, "class", "info-box svelte-u9m2au");
-    			add_location(div1, file$d, 270, 2, 6849);
-    			attr_dev(div2, "id", "map");
-    			attr_dev(div2, "class", "svelte-u9m2au");
-    			add_location(div2, file$d, 273, 2, 6946);
-    			attr_dev(h4, "class", "svelte-u9m2au");
-    			add_location(h4, file$d, 275, 4, 6994);
-    			set_style(span0, "background-color", "#FFC0CB");
-    			attr_dev(span0, "class", "svelte-u9m2au");
-    			add_location(span0, file$d, 276, 9, 7032);
-    			attr_dev(div3, "class", "svelte-u9m2au");
-    			add_location(div3, file$d, 276, 4, 7027);
-    			set_style(span1, "background-color", "#FF9999");
-    			attr_dev(span1, "class", "svelte-u9m2au");
-    			add_location(span1, file$d, 277, 9, 7096);
-    			attr_dev(div4, "class", "svelte-u9m2au");
-    			add_location(div4, file$d, 277, 4, 7091);
-    			set_style(span2, "background-color", "#FF6666");
-    			attr_dev(span2, "class", "svelte-u9m2au");
-    			add_location(span2, file$d, 278, 9, 7160);
-    			attr_dev(div5, "class", "svelte-u9m2au");
-    			add_location(div5, file$d, 278, 4, 7155);
-    			set_style(span3, "background-color", "#FF3333");
-    			attr_dev(span3, "class", "svelte-u9m2au");
-    			add_location(span3, file$d, 279, 9, 7225);
-    			attr_dev(div6, "class", "svelte-u9m2au");
-    			add_location(div6, file$d, 279, 4, 7220);
-    			set_style(span4, "background-color", "#FF0000");
-    			attr_dev(span4, "class", "svelte-u9m2au");
-    			add_location(span4, file$d, 280, 9, 7290);
-    			attr_dev(div7, "class", "svelte-u9m2au");
-    			add_location(div7, file$d, 280, 4, 7285);
-    			set_style(span5, "background-color", "#8B0000");
-    			attr_dev(span5, "class", "svelte-u9m2au");
-    			add_location(span5, file$d, 281, 9, 7355);
-    			attr_dev(div8, "class", "svelte-u9m2au");
-    			add_location(div8, file$d, 281, 4, 7350);
-    			attr_dev(div9, "class", "legend svelte-u9m2au");
-    			add_location(div9, file$d, 274, 2, 6969);
-    			attr_dev(div10, "id", "map-container");
-    			attr_dev(div10, "class", "svelte-u9m2au");
-    			add_location(div10, file$d, 269, 0, 6822);
-    			attr_dev(button0, "class", "svelte-u9m2au");
-    			add_location(button0, file$d, 286, 2, 7462);
-    			attr_dev(button1, "class", "svelte-u9m2au");
-    			add_location(button1, file$d, 287, 2, 7514);
-    			attr_dev(div11, "class", "button-container svelte-u9m2au");
-    			add_location(div11, file$d, 285, 0, 7429);
+    			add_location(strong, file$d, 237, 4, 6248);
+    			attr_dev(div0, "class", "info-box svelte-1soki1n");
+    			add_location(div0, file$d, 236, 2, 6221);
+    			attr_dev(div1, "id", "map");
+    			attr_dev(div1, "class", "svelte-1soki1n");
+    			add_location(div1, file$d, 239, 2, 6318);
+    			attr_dev(div2, "id", "map-container");
+    			attr_dev(div2, "class", "svelte-1soki1n");
+    			add_location(div2, file$d, 235, 0, 6194);
+    			attr_dev(button0, "class", "svelte-1soki1n");
+    			add_location(button0, file$d, 243, 2, 6380);
+    			attr_dev(button1, "class", "svelte-1soki1n");
+    			add_location(button1, file$d, 244, 2, 6432);
+    			attr_dev(div3, "class", "button-container svelte-1soki1n");
+    			add_location(div3, file$d, 242, 0, 6347);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, div10, anchor);
-    			append_dev(div10, div1);
-    			append_dev(div1, strong);
-    			append_dev(div1, t3);
-    			append_dev(div1, t4);
-    			append_dev(div10, t5);
-    			append_dev(div10, div2);
-    			append_dev(div10, t6);
-    			append_dev(div10, div9);
-    			append_dev(div9, h4);
-    			append_dev(div9, t8);
-    			append_dev(div9, div3);
-    			append_dev(div3, span0);
-    			append_dev(div3, t9);
-    			append_dev(div9, t10);
-    			append_dev(div9, div4);
-    			append_dev(div4, span1);
-    			append_dev(div4, t11);
-    			append_dev(div9, t12);
-    			append_dev(div9, div5);
-    			append_dev(div5, span2);
-    			append_dev(div5, t13);
-    			append_dev(div9, t14);
-    			append_dev(div9, div6);
-    			append_dev(div6, span3);
-    			append_dev(div6, t15);
-    			append_dev(div9, t16);
-    			append_dev(div9, div7);
-    			append_dev(div7, span4);
-    			append_dev(div7, t17);
-    			append_dev(div9, t18);
-    			append_dev(div9, div8);
-    			append_dev(div8, span5);
-    			append_dev(div8, t19);
-    			insert_dev(target, t20, anchor);
-    			insert_dev(target, div11, anchor);
-    			append_dev(div11, button0);
-    			append_dev(div11, t22);
-    			append_dev(div11, button1);
+    			insert_dev(target, div2, anchor);
+    			append_dev(div2, div0);
+    			append_dev(div0, strong);
+    			append_dev(div0, t1);
+    			append_dev(div0, t2);
+    			append_dev(div2, t3);
+    			append_dev(div2, div1);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, div3, anchor);
+    			append_dev(div3, button0);
+    			append_dev(div3, t6);
+    			append_dev(div3, button1);
 
     			if (!mounted) {
     				dispose = [
@@ -25986,16 +25853,14 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*totalAccidents*/ 1) set_data_dev(t4, /*totalAccidents*/ ctx[0]);
+    			if (dirty & /*totalAccidents*/ 1) set_data_dev(t2, /*totalAccidents*/ ctx[0]);
     		},
     		i: noop$4,
     		o: noop$4,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(div10);
-    			if (detaching) detach_dev(t20);
-    			if (detaching) detach_dev(div11);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div3);
     			mounted = false;
     			run_all(dispose);
     		}
@@ -26056,8 +25921,10 @@ var app = (function () {
     		map.on("load", async () => {
     			accidentData = await csv("https://raw.githubusercontent.com/brybrycha/Crash_Camden_UK/main/public/Cleaned_Road_Collision_Vehicles_In_Camden.csv");
     			updateAccidentData();
-    			updateAccidentClusters();
-    			updateVisibleAccidents(); // Ensure initial update
+
+    			map.once('idle', () => {
+    				updateVisibleAccidents();
+    			});
 
     			map.on('zoomend', () => {
     				updateAccidentClusters();
@@ -26065,8 +25932,6 @@ var app = (function () {
     			});
 
     			map.on('moveend', updateVisibleAccidents);
-
-    			// Tooltip
     			const tooltip = new mapboxgl.Popup({ closeButton: false, closeOnClick: false });
 
     			map.on('mouseenter', 'accident_points', e => {
@@ -26153,14 +26018,12 @@ var app = (function () {
     				}
     			});
     		}
-
-    		updateVisibleAccidents();
     	}
 
     	function updateAccidentData() {
     		accidentLocations = processAccidentData(accidentData);
     		updateAccidentClusters();
-    		updateVisibleAccidents(); // Ensure accident count is updated
+    		updateVisibleAccidents();
     	}
 
     	function toggleDaytime() {
@@ -26169,6 +26032,7 @@ var app = (function () {
 
     		map.once('styledata', () => {
     			updateAccidentData();
+    			map.once('idle', updateVisibleAccidents);
     		});
     	}
 
@@ -26178,6 +26042,7 @@ var app = (function () {
 
     		map.once('styledata', () => {
     			updateAccidentData();
+    			map.once('idle', updateVisibleAccidents);
     		});
     	}
 
@@ -26267,9 +26132,9 @@ var app = (function () {
     			t0 = text$1(/*currentHour*/ ctx[0]);
     			t1 = text$1(":00");
     			attr_dev(div0, "class", "clock svelte-aze90b");
-    			add_location(div0, file$c, 62, 2, 1305);
+    			add_location(div0, file$c, 62, 2, 1262);
     			attr_dev(div1, "class", "clock-container svelte-aze90b");
-    			add_location(div1, file$c, 61, 0, 1273);
+    			add_location(div1, file$c, 61, 0, 1230);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -26301,7 +26166,7 @@ var app = (function () {
     	return block;
     }
 
-    const scrollThreshold = 18; // Adjust this value to control sensitivity
+    const scrollThreshold = 18;
 
     function instance$c($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
@@ -27518,11 +27383,11 @@ var app = (function () {
     			div0 = element("div");
     			svg = svg_element("svg");
     			attr_dev(svg, "id", "dual-bar-chart");
-    			add_location(svg, file$5, 222, 4, 7186);
-    			attr_dev(div0, "class", "chart-container svelte-zbqwbh");
-    			add_location(div0, file$5, 221, 2, 7152);
-    			attr_dev(div1, "class", "container svelte-zbqwbh");
-    			add_location(div1, file$5, 220, 0, 7126);
+    			add_location(svg, file$5, 222, 4, 6741);
+    			attr_dev(div0, "class", "chart-container svelte-4517w7");
+    			add_location(div0, file$5, 221, 2, 6707);
+    			attr_dev(div1, "class", "container svelte-4517w7");
+    			add_location(div1, file$5, 220, 0, 6681);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -27590,7 +27455,6 @@ var app = (function () {
     		});
     	}
 
-    	// Function to aggregate data by severity and daytime/nighttime and calculate percentages
     	function aggregateData() {
     		const severityCounts = groups(processedData, d => d.severity, d => d.daytime).map(d => {
     			const daytimeCount = d[1].find(v => v[0] === 'Daytime')?.[1].length || 0;
@@ -27611,29 +27475,25 @@ var app = (function () {
     		return severityCounts;
     	}
 
-    	// Function to draw the chart
     	function drawChart(data) {
     		const margin = {
     			top: 80,
     			right: 10,
     			bottom: 40,
     			left: 150
-    		}; // Adjusted right margin
+    		};
 
-    		const width = 1000 - margin.left - margin.right; // Adjusted width
-    		const height = 400 - margin.top - margin.bottom; // Adjusted height
+    		const width = 1000 - margin.left - margin.right;
+    		const height = 400 - margin.top - margin.bottom;
     		select("#dual-bar-chart").selectAll("*").remove();
-    		const svg = select("#dual-bar-chart").attr("width", width + margin.left + margin.right + 100).attr("height", height + margin.top + margin.bottom).append("g").attr("transform", `translate(${margin.left},${margin.top})`); // Added extra space for total counts
-    		const x = linear().domain([0, 100]).range([0, width]); // Percentage scale
-    		const y = band().domain(data.map(d => d.severity)).range([0, height]).padding(0.2); // Adjust padding to fit bars inside the chart
-
-    		// Tooltip div
+    		const svg = select("#dual-bar-chart").attr("width", width + margin.left + margin.right + 100).attr("height", height + margin.top + margin.bottom).append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+    		const x = linear().domain([0, 100]).range([0, width]);
+    		const y = band().domain(data.map(d => d.severity)).range([0, height]).padding(0.2);
     		const tooltip = select("body").append("div").attr("class", "tooltip").style("position", "absolute").style("background", "#fff").style("border", "1px solid #ccc").style("padding", "5px").style("display", "none").style("pointer-events", "none");
-
     		svg.append("g").call(axisLeft(y));
 
     		svg.selectAll(".bar.daytime").data(data).enter().append("rect").attr("class", "bar daytime").attr("x", 0).attr("y", d => y(d.severity)).attr("width", d => x(d.daytimePercentage)).attr("height", 50).attr("fill", "#ffba49").on("mouseover", function (event, d) {
-    			tooltip.style("display", "block").html(`Daytime Accidents: ${d.daytimeCount}`); // Start from 0
+    			tooltip.style("display", "block").html(`Daytime Accidents: ${d.daytimeCount}`);
     		}).on("mousemove", function (event) {
     			tooltip.style("left", event.pageX + 10 + "px").style("top", event.pageY - 20 + "px");
     		}).on("mouseout", function () {
@@ -27641,7 +27501,7 @@ var app = (function () {
     		});
 
     		svg.selectAll(".bar.nighttime").data(data).enter().append("rect").attr("class", "bar nighttime").attr("x", d => x(d.daytimePercentage)).attr("y", d => y(d.severity)).attr("width", d => x(d.nighttimePercentage)).attr("height", 50).attr("fill", "#20a39e").on("mouseover", function (event, d) {
-    			tooltip.style("display", "block").html(`Nighttime Accidents: ${d.nighttimeCount}`); // Start where the daytime bar ends
+    			tooltip.style("display", "block").html(`Nighttime Accidents: ${d.nighttimeCount}`);
     		}).on("mousemove", function (event) {
     			tooltip.style("left", event.pageX + 10 + "px").style("top", event.pageY - 20 + "px");
     		}).on("mouseout", function () {
@@ -27650,14 +27510,9 @@ var app = (function () {
 
     		svg.selectAll(".label.daytime").data(data).enter().append("text").attr("class", "label daytime").attr("x", d => x(d.daytimePercentage) / 2).attr("y", d => y(d.severity) + y.bandwidth() / 2).attr("dy", ".35em" + 10).attr("text-anchor", "middle").style("fill", "black").text(d => `${d.daytimePercentage.toFixed(1)}%`);
     		svg.selectAll(".label.nighttime").data(data).enter().append("text").attr("class", "label nighttime").attr("x", d => x(d.daytimePercentage) + x(d.nighttimePercentage) / 2).attr("y", d => y(d.severity) + y.bandwidth() / 2).attr("dy", ".35em" + 10).attr("text-anchor", "middle").style("fill", "black").text(d => `${d.nighttimePercentage.toFixed(1)}%`);
-
-    		// Add total counts on the right
     		svg.selectAll(".total-label").data(data).enter().append("text").attr("class", "total-label").attr("x", width + 10).attr("y", d => y(d.severity) + y.bandwidth() / 2).attr("dy", ".35em" + 10).attr("text-anchor", "start").style("font-size", "13px").style("fill", "black").style("font-weight", "bold").text(d => `Total: ${d.daytimeCount + d.nighttimeCount}`);
-
     		svg.append("text").attr("x", 0).attr("y", -10).attr("text-anchor", "end").text("Daytime").style("fill", "orange");
     		svg.append("text").attr("x", width - 50).attr("y", -10).attr("text-anchor", "start").text("Nighttime").style("fill", "blue");
-
-    		// Add title
     		svg.append("text").attr("x", width / 2).attr("y", -margin.top / 2).attr("text-anchor", "middle").style("font-size", "20px").style("text-decoration", "underline").text("Does the Time of the Day Affect Severity of Accidents?");
     	}
 
@@ -27967,21 +27822,21 @@ var app = (function () {
     			br8 = element("br");
     			br9 = element("br");
     			add_location(br0, file$2, 2, 4, 39);
-    			attr_dev(span0, "class", "level svelte-gscn79");
+    			attr_dev(span0, "class", "level svelte-mr9ebn");
     			add_location(span0, file$2, 3, 23, 67);
-    			attr_dev(span1, "class", "highlight svelte-gscn79");
+    			attr_dev(span1, "class", "highlight svelte-mr9ebn");
     			add_location(span1, file$2, 3, 71, 115);
-    			attr_dev(span2, "class", "level svelte-gscn79");
+    			attr_dev(span2, "class", "level svelte-mr9ebn");
     			add_location(span2, file$2, 3, 114, 158);
-    			attr_dev(span3, "class", "highlight svelte-gscn79");
+    			attr_dev(span3, "class", "highlight svelte-mr9ebn");
     			add_location(span3, file$2, 3, 162, 206);
     			add_location(br1, file$2, 5, 4, 323);
     			add_location(br2, file$2, 5, 8, 327);
-    			attr_dev(span4, "class", "highlight svelte-gscn79");
+    			attr_dev(span4, "class", "highlight svelte-mr9ebn");
     			add_location(span4, file$2, 7, 8, 341);
-    			attr_dev(span5, "class", "level svelte-gscn79");
+    			attr_dev(span5, "class", "level svelte-mr9ebn");
     			add_location(span5, file$2, 7, 132, 465);
-    			attr_dev(span6, "class", "level svelte-gscn79");
+    			attr_dev(span6, "class", "level svelte-mr9ebn");
     			add_location(span6, file$2, 8, 57, 556);
     			add_location(br3, file$2, 9, 8, 596);
     			add_location(br4, file$2, 9, 12, 600);
@@ -27990,9 +27845,9 @@ var app = (function () {
     			add_location(br7, file$2, 13, 4, 705);
     			add_location(br8, file$2, 16, 4, 1069);
     			add_location(br9, file$2, 16, 8, 1073);
-    			attr_dev(p, "class", "body-text svelte-gscn79");
+    			attr_dev(p, "class", "body-text svelte-mr9ebn");
     			add_location(p, file$2, 1, 2, 12);
-    			attr_dev(section, "class", "svelte-gscn79");
+    			attr_dev(section, "class", "svelte-mr9ebn");
     			add_location(section, file$2, 0, 0, 0);
     		},
     		l: function claim(nodes) {
@@ -28134,13 +27989,13 @@ var app = (function () {
     			br11 = element("br");
     			add_location(br0, file$1, 2, 8, 44);
     			add_location(br1, file$1, 2, 12, 48);
-    			attr_dev(span0, "class", "high svelte-lpk27d");
+    			attr_dev(span0, "class", "high svelte-sq7zq1");
     			add_location(span0, file$1, 3, 8, 61);
     			add_location(br2, file$1, 4, 8, 106);
     			add_location(br3, file$1, 4, 12, 110);
     			add_location(br4, file$1, 5, 8, 123);
     			add_location(br5, file$1, 5, 12, 127);
-    			attr_dev(span1, "class", "highlight svelte-lpk27d");
+    			attr_dev(span1, "class", "highlight svelte-sq7zq1");
     			add_location(span1, file$1, 6, 6, 138);
     			add_location(br6, file$1, 7, 6, 553);
     			add_location(br7, file$1, 7, 10, 557);
@@ -28148,7 +28003,7 @@ var app = (function () {
     			add_location(br9, file$1, 9, 10, 931);
     			add_location(br10, file$1, 11, 6, 1322);
     			add_location(br11, file$1, 11, 10, 1326);
-    			attr_dev(p, "class", "body-text svelte-lpk27d");
+    			attr_dev(p, "class", "body-text svelte-sq7zq1");
     			add_location(p, file$1, 1, 4, 14);
     			add_location(section, file$1, 0, 0, 0);
     		},
