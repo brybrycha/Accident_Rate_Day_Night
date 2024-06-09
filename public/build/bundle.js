@@ -730,11 +730,11 @@ var app = (function () {
     			t7 = text$1("\n    Join us as we delve into the daily rhythms of road safety, analyzing peak times and comparing accidents during the day and night to understand how timing influences road incidents.\n    ");
     			br8 = element("br");
     			br9 = element("br");
-    			attr_dev(span0, "class", "highlight svelte-1sj2fnj");
+    			attr_dev(span0, "class", "highlight svelte-1ag4rmx");
     			add_location(span0, file$g, 2, 4, 38);
     			add_location(br0, file$g, 5, 4, 352);
     			add_location(br1, file$g, 5, 8, 356);
-    			attr_dev(span1, "class", "color");
+    			attr_dev(span1, "class", "color svelte-1ag4rmx");
     			add_location(span1, file$g, 6, 41, 402);
     			add_location(br2, file$g, 7, 4, 505);
     			add_location(br3, file$g, 7, 8, 509);

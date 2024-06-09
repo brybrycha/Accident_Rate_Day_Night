@@ -27,4 +27,7 @@
   .body-text {
     font-size: 1.2em; / Increase the font size of the body text slightly */
   }
+  .color {
+    color:darkred; 
+  }
 </style>
